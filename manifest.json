@@ -1,12 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Facebook Cookie Manager",
+  "name": "FB Cookie getter by Vern",
   "version": "1.0",
-  "description": "Import and export Facebook cookies as JSON.",
-  "permissions": ["cookies", "tabs", "activeTab"],
-  "host_permissions": ["https://facebook.com/*"],
+  "description": "View Facebook cookies in JSON and string format",
+  "permissions": ["cookies", "tabs"],
+  "host_permissions": ["https://*.facebook.com/*"],
   "action": {
-    "default_popup": "popup.html",
-    "default_title": "Manage FB Cookies"
+    "default_popup": "popup.html"
   }
 }
