@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Facebook Cookie Manager</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 10px; width: 300px; }
-        button { margin-top: 10px; padding: 5px 10px; }
-    </style>
+  <meta charset="UTF-8" />
+  <title>FB Cookies</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h3>Facebook Cookie Manager</h3>
-    <input type="file" id="import" accept=".json" />
-    <button id="export">Export Cookies</button>
-    <script src="popup.js"></script>
+
+<div class="container">
+  <h1>🍪 Facebook Cookies</h1>
+
+  <div class="box">
+    <div class="header">
+      <span>Cookie String</span>
+      <button id="copyString">Copy</button>
+    </div>
+    <textarea id="cookieString" readonly></textarea>
+  </div>
+
+  <div class="box">
+    <div class="header">
+      <span>Cookie JSON</span>
+      <button id="copyJson">Copy</button>
+    </div>
+    <textarea id="cookieJson" readonly></textarea>
+  </div>
+
+  <p class="footer">Real cookies • Live • No export</p>
+</div>
+
+<script src="popup.js"></script>
 </body>
 </html>
